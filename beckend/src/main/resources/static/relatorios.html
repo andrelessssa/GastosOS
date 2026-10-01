@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Relatórios</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="wrap wide">
+  <header>
+    <div><h1>Relatórios 📊</h1><p>Entradas, saídas e saldo mês a mês</p></div>
+    <div class="actions">
+      <a class="cta ghost" href="index.html">← GASTOS</a>
+      <div class="yearnav">
+        <button class="nav" id="aPrev">◀</button>
+        <b id="ano"></b>
+        <button class="nav" id="aNext">▶</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="rel-scroll" id="rel"></div>
+  <p class="nota">As saídas incluem tudo que foi lançado (pago ou não). Borda vermelha = ainda há valor a pagar naquela categoria.</p>
+</main>
+<script src="relatorios.js"></script>
+</body>
+</html>

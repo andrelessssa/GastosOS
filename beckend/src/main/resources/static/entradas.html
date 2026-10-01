@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Entradas</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@500;700&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="entradas">
+<main class="wrap">
+  <header>
+    <div><h1>Entradas 💰</h1><p id="hoje"></p></div>
+    <div class="actions">
+      <a class="cta ghost" href="index.html">← GASTOS</a>
+      <button class="cta" id="btnHoje">LANÇAR ENTRADA DE HOJE →</button>
+    </div>
+  </header>
+
+  <section class="stats">
+    <div class="stat"><span>Total de entradas</span><b id="sTotal" class="fire">R$ 0,00</b></div>
+    <div class="stat"><span>Dias com entrada</span><b id="sDias" class="done">0</b></div>
+    <div class="stat"><span>Média por dia</span><b id="sMedia" class="gold">—</b></div>
+    <div class="stat"><span>Maior categoria</span><b id="sTop" class="fire small">—</b></div>
+  </section>
+
+  <section class="grid">
+    <div class="card">
+      <h2>Entradas por categoria</h2>
+      <div id="cats"></div>
+    </div>
+    <div class="card">
+      <div class="calhead">
+        <button class="nav" id="prev">◀</button>
+        <span id="mes"></span>
+        <button class="nav txt" id="btnMes">Hoje</button>
+        <button class="nav" id="next">▶</button>
+      </div>
+      <div class="dow"><i>D</i><i>S</i><i>T</i><i>Q</i><i>Q</i><i>S</i><i>S</i></div>
+      <div class="days" id="cal"></div>
+    </div>
+  </section>
+</main>
+
+<div class="modal" id="modal" hidden>
+  <div class="box">
+    <div class="mhead"><h3 id="mTitulo"></h3><button class="nav" id="fechar">✕</button></div>
+    <form id="form" autocomplete="off">
+      <label>Categoria
+        <input id="fCat" list="catList" placeholder="Ex.: Salário" required>
+        <datalist id="catList"></datalist>
+      </label>
+      <label>Valor (R$)
+        <input id="fVal" inputmode="decimal" placeholder="0,00" required>
+      </label>
+      <button class="cta" type="submit">ADICIONAR</button>
+    </form>
+    <div id="lista"></div>
+  </div>
+</div>
+<script src="entradas.js"></script>
+</body>
+</html>
