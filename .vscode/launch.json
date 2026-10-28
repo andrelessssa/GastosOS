@@ -3,16 +3,9 @@
     "configurations": [
         {
             "type": "java",
-            "name": "ControleDeGastosApplication",
-            "request": "launch",
-            "mainClass": "com.sistema.controledegastos.ControleDeGastosApplication",
-            "projectName": "ControleDeGastos"
-        },
-        {
-            "type": "java",
             "name": "ControleDeGastos",
             "request": "launch",
-            "mainClass": "COLE.O.PACOTE.AQUI.ControleDeGastosApplication",
+            "mainClass": "com.sistema.controledegastos.ControleDeGastosApplication",
             "projectName": "ControleDeGastos",
             "envFile": "${workspaceFolder}/.env"
         }
